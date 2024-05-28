@@ -1,0 +1,18 @@
+.hero {
+    margin: 0 auto;
+    max-width: 95%;
+    min-height: 96vh;
+    background-image: url(../image/);
+    background-size: cover;
+    text-align: center;
+
+    &__content {
+        max-width: 700px;
+        
+        &__branding {
+            img {
+                max-width: 350px;
+            }
+        }
+    }
+}
