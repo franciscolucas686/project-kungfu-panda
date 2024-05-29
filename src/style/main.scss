@@ -12,16 +12,15 @@
     font-weight: 700;
 }
 
+$corTextoPrincipal: #fff;
+$corTituloPrincipal: #fff;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Saira Condensed;
     font-weight: bold;
-}
-
-body {
-    background-color: #000   ;
 }
 
 @mixin text($font-size: 16px) {
@@ -32,7 +31,7 @@ body {
 
 @mixin title($fontsize: 40px) {
     @include text($fontsize);
-    color: #C9C9C9;
+    color: $corTituloPrincipal;
 }
 
 .text--big {
@@ -64,13 +63,20 @@ body {
     margin: 0 auto;
     width: 30%;
     height: 60px;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: normal;
     color: #fff;
-    background-color: #004256;
+    background-color: #F70002;
     text-transform: uppercase;
     border-radius: 4px;
     border: none;
     margin-top: 2vw;
+    transition: all ease .4s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#F70002, 10%);
+    }
 }
 
 

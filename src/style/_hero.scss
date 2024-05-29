@@ -1,18 +1,28 @@
 .hero {
-    margin: 0 auto;
-    max-width: 95%;
-    min-height: 96vh;
-    background-image: url(../image/);
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/kung-fu-panda-background.jpg);
     background-size: cover;
     text-align: center;
 
+    &__spacing{
+        margin: 0 auto;
+    }
+
     &__content {
-        max-width: 700px;
-        
+        max-width: 600px;
+
         &__branding {
             img {
                 max-width: 350px;
+                margin: 0 auto;
             }
         }
+        
+        p {
+            margin-top: 19px;
+        }
+    
+
     }
 }
