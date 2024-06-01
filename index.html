@@ -4,21 +4,169 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/style/main.css">
-    <title>Kung Fu Panda</title>
+    <title>A grande aposta</title>
 </head>
 <body>
     <section class="hero">
-        <div class="hero__spacing">
+        <div class="hero__background"></div>
             <div class="hero__content">
-                <div class="hero__content__branding">
-                    <img src="src/image/kung-fu_panda_logo_2.png" alt="Logo Kung-Fu Panda">
-                </div>
-                <p class="title--small">O  grande Dragão guerreiro!</p>
-                <button class="button">
-                    Assistir agora
+                <h2 class="title--big">A grande aposta</h2>
+                <p class="text--big">Um grupo de oportunistas faz fortuna ao prever a crise econômica dos EUA e apostar contra os bancos.</p>
+                <button class="button">Assistir agora</button>
+            </div>
+    </section>
+    <section class="synopsis">
+        <div class="synopsis__content">
+            <h2 class="title">Sinopse</h2>
+            <p class="text--big">Michael Burry (Christian Bale) é o dono de uma empresa de médio porte, que decide investir muito dinheiro do fundo que coordena ao apostar que o sistema imobiliário nos Estados Unidos irá quebrar em breve. Tal decisão gera complicações junto aos investidores, já que nunca antes alguém havia apostado contra o sistema e levado vantagem. Ao saber destes investimentos, o corretor Jared Vennett (Ryan Gosling) percebe a oportunidade e passa a oferecê-la a seus clientes. Um deles é Mark Baum (Steve Carell), o dono de uma corretora que enfrenta problemas pessoais desde que seu irmão se suicidou. Paralelamente, dois iniciantes na Bolsa de Valores percebem que podem ganhar muito dinheiro ao apostar na crise imobiliária e, para tanto, pedem ajuda a um guru de Wall Street, Ben Rickert (Brad Pitt), que vive recluso.</p>
+        </div>
+        <div class="synopsis__image">
+            <img src="dist/image/mark_and_vennet.avif" alt="Mark Baum e Jared Vennet">
+        </div>
+    </section>
+    <section class="characters">
+        <div class="characters__bg">
+            <h2 class="title">Conheça os personagens</h2>
+            <nav class="characters__tab">
+                <button data-tab-button="mark_baum" class="characters__tab__button characters__tab__button--is--active">
+                    Mark Baum
                 </button>
+                <button data-tab-button="jared_vennet" class="characters__tab__button">
+                    Jared Vennett
+                </button>
+                <button data-tab-button="ben_rickert" class="characters__tab__button">
+                    Ben Rickert
+                </button>
+                <button data-tab-button="michael_burry" class="characters__tab__button">
+                    Michael Burry
+                </button>
+            </nav>
+            <div data-tab-id="mark_baum" class="characters__content characters__content--is--active">
+            <img src="dist/image/mark_baum.jpg" alt="Mark Baum">
+                <p class="text--big">
+                    Mark Baum é o chefe da equipe da FrontPoint Partners, um fundo de hedge. Ele é retratado como um homem profundamente cético e moralmente consciente, frequentemente em conflito com a corrupção que percebe no sistema financeiro. Baum e sua equipe, incluindo os personagens Vinnie Daniel (interpretado por Jeremy Strong), Porter Collins (interpretado por Hamish Linklater) e Danny Moses (interpretado por Rafe Spall), são apresentados a Jared Vennett (interpretado por Ryan Gosling). Vennett explica a eles a vulnerabilidade do mercado imobiliário e como os swaps de crédito podem ser usados para apostar contra as hipotecas subprime.
+                </p>
+            </div>
+            <div data-tab-id="michael_burry" class="characters__content">
+                <img src="dist/image/michael_burry.jpg" alt="Michael Burry">
+                <p class="text--big">
+                    Michael Burry é o fundador e gestor da Scion Capital, um fundo de hedge. Ele é um médico que se tornou investidor e é conhecido por seu estilo de investimento meticuloso e pouco convencional. Burry é um personagem excêntrico, muitas vezes isolado, que prefere trabalhar sozinho e com música alta em seu escritório. Ao analisar os dados das hipotecas subprime, percebe que muitas dessas hipotecas são de altíssimo risco e que a maioria dos títulos de dívida garantidos por hipotecas (CDOs) estão repletos desses empréstimos problemáticos. Ele conclui que o mercado imobiliário dos EUA está prestes a desmoronar.
+                </p>
+            </div>
+            <div data-tab-id="jared_vennet" class="characters__content">
+                <img src="dist/image/jared_vennet.jpg" alt="Jared Vennet">
+                <p class="text--big">
+                    Jared Vennett é um ambicioso e carismático trader de valores mobiliários que trabalha no Deutsche Bank. Ele percebe que o mercado imobiliário dos EUA está construído sobre uma base instável de hipotecas subprime que estão destinadas a falhar. Aproveitando essa percepção, ele decide lucrar com a iminente catástrofe.Jared Vennett percebe que muitas hipotecas subprime são, na verdade, de alto risco e, consequentemente, prevê que o mercado imobiliário está prestes a colapsar. Ele entende que os títulos de dívida garantidos por hipotecas (CDOs) são extremamente vulneráveis. ennett cria e começa a vender swaps de crédito, que são essencialmente apostas contra o mercado imobiliário. Ele acredita que, quando o mercado imobiliário colapsar, esses swaps se tornarão extremamente valiosos.
+                </p>
+            </div>
+            <div data-tab-id="ben_rickert" class="characters__content">
+                <img src="dist/image/ben_ricket.jpg" alt="Ben Rickert">
+                <p class="text--big">
+                    Ben Rickert é um ex-banqueiro que vive em semi-isolamento, desconfiado do sistema financeiro e das instituições. Ele já teve uma carreira bem-sucedida em Wall Street, mas se afastou devido ao seu desdém pela corrupção e pela ganância no setor. Charlie Geller (interpretado por John Magaro) e Jamie Shipley (interpretado por Finn Wittrock) são dois jovens investidores ambiciosos que gerenciam um pequeno fundo hedge. Eles descobrem um prospecto financeiro que sugere a vulnerabilidade do mercado imobiliário e buscam validar sua teoria.
+                    Eles conhecem Ben Rickert, que já teve uma carreira bem-sucedida em Wall Street e que agora leva uma vida mais reclusa. Rickert concorda em ajudar Charlie e Jamie, fornecendo-lhes os recursos e o acesso ao mercado necessário para que possam fazer suas apostas contra as hipotecas subprime.
+                </p>
             </div>
         </div>
     </section>
+    <section class="available_devices">
+        <h2 class="title">Assista aonde quiser</h2>
+        <ul class="available-devices__list">
+            <li class="available-devices__list">
+                <img src="" alt="">
+                <strong></strong>
+                <p></p>
+                <button></button>
+            </li>
+            <li>
+                <img src="" alt="">
+                <strong></strong>
+                <p></p>
+                <button></button>
+            </li>
+            <li>
+                <img src="" alt="">
+                <strong></strong>
+                <p></p>
+                <button></button>
+            </li>
+        </ul>
+        <p></p>
+    </section>
+    <section class="curiosidades">
+        <h2 class="title">Perguntas frequentes</h2>
+        <ul>       
+            <li>
+                <div>
+                    Pergunta?
+                </div>
+                <div>
+                    A resposta da pergunta
+                </div>
+            </li>
+            <li>
+                <div>
+                    Pergunta?
+                </div>
+                <div>
+                    A resposta da pergunta
+                </div>
+            </li>
+            <li>
+                <div>
+                    Pergunta?
+                </div>
+                <div>
+                    A resposta da pergunta
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/disneyplus.svg" alt="Disney+">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <img src="./dist/images/icones/globe.svg" alt="Globo do mundo">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">
+                        Dispositivos compatíveis
+                    </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Sobre o Disney+</a>
+                </li>
+            </ul>
+            <p class="text--small">
+                ® 2022 Disney, Disney+ e The Walt Disney Company. Todos os direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a disponibilidade.
+            </p>
+            <p class="text--small">
+                Disney+ é um serviço pago, baseado em assinatura e sujeito a termos e condições. O serviço Disney+ é comercializado por The Walt Disney Company (Brasil) Ltda., World Trade Center, Av. Das Nações Unidas, 12.551, 12.555, 12.559, Piso 10, São Paulo/SP – CEP 04578-903, Brasil e CNPJ/M 73.042.962/0004-20
+            </p>
+        </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
 </body>
 </html>

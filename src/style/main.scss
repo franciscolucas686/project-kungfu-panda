@@ -1,4 +1,6 @@
 @use 'hero';
+@use 'synopsis';
+@use 'characters';
 
 @font-face {
     font-family: Saira Condensed;
@@ -12,8 +14,9 @@
     font-weight: 700;
 }
 
-$corTextoPrincipal: #fff;
-$corTituloPrincipal: #fff;
+$corTextoPrincipal: #000;
+$corTextoSecundaria:#fff;
+$corTituloPrincipal: #000;
 
 *{
     margin: 0;
@@ -21,6 +24,10 @@ $corTituloPrincipal: #fff;
     box-sizing: border-box;
     font-family: Saira Condensed;
     font-weight: bold;
+}
+
+body {
+    background-color:fff;
 }
 
 @mixin text($font-size: 16px) {
@@ -36,6 +43,7 @@ $corTituloPrincipal: #fff;
 
 .text--big {
     @include text(20px);
+    font-weight: normal
 }
 
 .text {
@@ -60,13 +68,12 @@ $corTituloPrincipal: #fff;
 
 .button {
     display: block;
-    margin: 0 auto;
     width: 30%;
     height: 60px;
     font-size: 20px;
     font-weight: normal;
-    color: #fff;
-    background-color: #F70002;
+    color: $corTextoSecundaria;
+    background-color: #1844be;
     text-transform: uppercase;
     border-radius: 4px;
     border: none;
@@ -75,7 +82,7 @@ $corTituloPrincipal: #fff;
     cursor: pointer;
 
     &:hover {
-        background-color: darken(#F70002, 10%);
+        background-color: lighten(#1844be, 10%);
     }
 }
 

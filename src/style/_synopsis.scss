@@ -1,0 +1,29 @@
+.synopsis {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 50px;
+
+    &__content {
+        max-width: 60%;
+        background-color: #9B5800;
+        max-width: 100%;
+        padding: 50px 25px;
+        border-radius: 12px;
+        margin: auto 0 ;
+
+        h2 {
+            color: #fff;
+            margin-bottom: .5em;
+        }
+    }
+
+    &__image {
+        margin: auto 0;
+        img {
+            max-width: 100%;
+            padding: 25px;
+        }
+    }
+}
