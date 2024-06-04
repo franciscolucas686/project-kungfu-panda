@@ -3,11 +3,26 @@
     margin: 0 auto;
     margin-bottom: 100px;
 
+    @media (max-width: 768px) {
+        margin-bottom: 4em;
+        
+    }
+
 
     &__background{
         min-height: 72vh;
         background-image: url(../image/background_3.jpg);
         background-size: cover;
+
+        @media (max-width: 768px) {
+            height: 40px;
+            min-height: 45vh;
+            background-image: url(../image/tbs-mobile.jpg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin-top: 90px;
+        }
     }
 
     .button {
@@ -19,13 +34,23 @@
         padding-left: 1em;
         margin-top: -50px;
 
+        @media (max-width: 768px) {
+            margin-top: 20px;
+            max-width: 100%;
+        }
+
         p {
             color: #000;
             margin-top: 2vw;
-        }
-
             @media (max-width: 768px) {
-                max-width: 180px;
+                margin-bottom: 20px;
             }
         }
+
+        button {
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
 }

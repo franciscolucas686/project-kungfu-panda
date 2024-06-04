@@ -5,6 +5,11 @@
     grid-template-columns: 1fr 1fr;
     margin-bottom: 50px;
 
+    @media (max-width: 768px) {
+        display: block;
+        margin-bottom: 2em;
+    }
+
     &__content {
         max-width: 60%;
         background-color: #9B5800;
@@ -12,6 +17,10 @@
         padding: 50px 25px;
         border-radius: 12px;
         margin: auto 0 ;
+
+        @media (max-width: 768px) {
+            padding: 15px 15px;
+        }
 
         h2 {
             color: #fff;

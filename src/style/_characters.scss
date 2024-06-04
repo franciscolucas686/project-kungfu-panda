@@ -12,6 +12,10 @@
             justify-content: flex-start;
             margin: 2vw 0 1vw;
 
+            @media (max-width: 768px) {
+                justify-content: space-between;
+            }
+
         &__button {
             color: #9B5800;
             font-size: 21px;
@@ -24,6 +28,10 @@
             cursor: pointer;
             border-bottom: 3px solid transparent;
 
+            @media (max-width: 768px) {
+                margin-bottom: 1em;
+            }
+
             &--is--active {
                 border-color: #000;
             }
@@ -35,18 +43,30 @@
         grid-template-columns: 35% 1fr;
         margin-bottom: 20px;
 
+        @media (max-width: 768px) {
+            grid-template-columns: auto;
+        }
+
         &--is--active {
             display: grid;
         }
         
         img {
             max-width: 330px;
+
+            @media (max-width: 768px) {
+                margin: 0 auto;
+            }
         }
         
         p {
             color: #000;
             margin: auto 0;
             line-height: 40px;
+
+            @media (max-width: 768px) {
+                margin-top: 1em;
+            }
         }
     }
 }
