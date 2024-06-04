@@ -32,4 +32,4 @@ exports.watch = watchFiles;
 exports.images = images;
 exports.scripts = scripts;
 
-exports.default = gulp.parallel(compileSass, watchFiles,images,scripts);
+exports.default = gulp.parallel(compileSass,images,scripts);
